@@ -1,0 +1,66 @@
+.engageParent {
+    background-color: rgb(51, 10, 85);
+    /* background: #0A0A0A; */
+
+}
+
+.engageTitle {
+
+    /* position: absolute; */
+    width: 857px;
+    height: 186.48px;
+    margin: 35px;
+    margin-left: 50px;
+    padding: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+
+    color: #FFFFFF;
+
+
+
+}
+
+.engageSteps {
+    /* position: absolute; */
+    width: 342px;
+    height: 242px;
+    margin: 35px;
+
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    backdrop-filter: blur(120px);
+
+
+}
+
+.engageStepBox {
+    display: flex;
+    margin-left: 150px;
+}
+
+.engageStepNum {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 35px;
+    color: #FFFFFF;
+
+}
+
+.engageStepName {
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    margin: 35px;
+    color: #FFFFFF;
+
+}
