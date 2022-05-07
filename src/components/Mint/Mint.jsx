@@ -13,7 +13,7 @@ const Mint = () => {
             <p className='mintTitleBold'>AI Generated NFTs</p>
             <div className='mintButtonParent'>
                 <input className='mintInput' placeholder='Enter your phase' />
-                <button className='mintButton'>Mint Now</button>
+                <button className='buttonMint'>Mint Now</button>
             </div>
             <div>
                 <div className='mintDesign'></div>
