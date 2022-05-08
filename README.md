@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## Please take a master pull before you start working on your branch. After you commit your changes to your branch. Kindly, open a PR to master and add everyone else as a reviewer. Refrain merging your code to master, without any approvals.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
