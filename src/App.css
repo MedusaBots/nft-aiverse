@@ -10,7 +10,6 @@
   height: 950px;
   background-image: url(background1.jpg);
   width: 100%;
-  margin-top: 30%;
 }
 
 /* .App-header {
@@ -42,7 +41,6 @@
 .top-header{
   display: flex;
   text-align: left;
-  width: 90%;
   margin-left: 13%;
 }
 
@@ -103,7 +101,7 @@ h3{
   transform: rotate(40deg);
   object-fit: unset;
   size: landscape;
-  margin-left: 70%;
+  margin-left: 50%;
   margin-top: -19%;
 }
 

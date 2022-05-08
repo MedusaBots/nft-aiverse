@@ -7,8 +7,7 @@ html {
     color: white;
     background: linear-gradient(rgb(187, 97, 187, 0.71) 2% , black 30%);
     background-color: #d1a8f0;
-    height: 800px;
-    margin-top: 15%;
+    height: 100vh;
   }
   
   /* .App-header {
@@ -34,8 +33,8 @@ html {
   .carding{
     display: flex;
     flex-wrap: wrap;
-    /* margin: auto; */
-    margin: 5px 90px 0;
+    margin: auto;
+    margin-top: 120px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -87,6 +86,7 @@ html {
       /* border: 2px solid yellow; */
       left: 13rem;
       top: 1rem;
+      margin: 0;
       font-weight: 800;
       font-stretch: expanded;
       /* font-family: 'Inter'; */
@@ -107,9 +107,6 @@ html {
       width: 30%;
       margin-bottom: 20px;
     }
-    .carding{
-      margin: 0;
-    }
   }
   
   @media only screen and (max-width: 1100px){
@@ -128,9 +125,6 @@ html {
       line-height: 3rem;
       margin-left: 11rem;
     }
-    .carding{
-      margin: 5px -15px 0;
-    }
     .pTag{
       margin-left: -3rem;
     }
@@ -145,9 +139,6 @@ html {
     .hr{
       top: 5rem;
     }
-    .carding{
-      margin: 5px 15px 0;
-    }
     .pTag{
       font-size: 1rem;
       line-height: 1.5rem;
@@ -159,9 +150,6 @@ html {
     .boxer{
       width: 100%;
       margin: 0 0 20px;
-    }
-    .carding{
-      margin: 25px 33px;
     }
     .CardHeader{
       font-size: 2.5rem;
@@ -179,9 +167,6 @@ html {
     .boxer{
       width: 150%;
       margin: 0 0 20px;
-    }
-    .carding{
-      margin: 23px 0px 0px 90px;
     }
    
     .pTag{
