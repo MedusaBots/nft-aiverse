@@ -6,8 +6,14 @@
   width: 100%;
 }
 
-.App-header {
-  /* background-color: #282c34; */
+.aiversebg{
+  height: 950px;
+  background-image: url(background1.jpg);
+  width: 100%;
+  margin-top: 30%;
+}
+
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,154 +21,100 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-.h1{
-  position: absolute;
-  background: linear-gradient(90deg, #FF6706 -6.06%, #0048F5 56.97%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-/* text-fill-color: transparent; */
-  /* width: 684px; */
-  height: 194px;
-  left: 130px;
-  top: 20px;
+.header-aiverse{
+  /* background: linear-gradient(90deg, #FF6706 -6.06%, #0048F5 56.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-clip: text;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   color: #FFFFFF;
-  width: 35%;
-  text-align: left;
+  width: 40%;
   font-size: 4rem;
-  margin: 15px;
 }
 
-.h2{
-  position: absolute;
-  width: 620px;
-  height: 194px;
-  left: 58%;
-  top: 70%;
-  /* font-family: 'Inter'; */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  line-height: 75px;
-  color: white;
-  width: 40%;
+.top-header{
+  display: flex;
   text-align: left;
-  background: linear-gradient(90deg,#e07e7e -6.06%, #859cd5 56.97%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  width: 90%;
+  margin-left: 13%;
 }
 
 .box{
-  position: absolute;
-    width: 34%;
-    height: 16%;
-    left: 10%;
-    top: 105%;
-    background: #7b71a05c;
-    border-top-right-radius: 50px;
+  height: 96px;
+  width: 29%;
+  background: #7b71a05c;
+  border-top-right-radius: 50px;
+  margin-left: 9%;
+  margin-top: -2%;
 }
 
-p{
-  position: absolute;
-  /* width: 608px; */
-  height: 29px;
-  left: 145px;
-  top: 220px;
+.p1{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 160%;
-  color: #6961b3;
-}
-
-.p2{
-  position: absolute;
-  /* width: 608px; */
-  height: 29px;
-  left: 59%;
-  top: 100%;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 160%;
-  color: #db9d9d;
+  color: white;
+  margin-top: 17%;
+  margin-left: -40%;
 }
 
 .robot{
-  position: absolute;
-  width: 350px;
-  height: 70%;
-  left: 15%;
-  top: 50%;
+  display: flex;
+  width: 378px;
   transform: scaleX(-1);
-  height: 55%;
+  height: 50%;
+  margin-top: -15%;
+  margin-left: 10%;
 }
 
 h3{
-  position: absolute;
-  width: 40%;
-  height: 90px;
-  top: -20%;
-  font-family: 'Orbitron', sans-serif;
-  /* font-style: normal; */
-  font-weight: 600;
-  left: 16%;
-  font-size: 30px;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  color: #FFFFFF;
+    margin-left: 15%;
+    width: 40%;
+    height: 90px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #FFFFFF;
 }
 
 .space{
-  position: absolute;
-  left: 65.7%;
-  /* right: 54.47%; */
-  top: 16%;
-  /* bottom: 32.83%; */
-  width: 25%;
-  height: 75%;
+    width: 25%;
+    height: 75%;
+    position: relative;
+    top: -105px;
+    left: 26%;
 }
 
 .techImg{
-  position: absolute;
-  right: 12%;
-  top: -15%;
   width: 16%;
-  height: 80%;
-  transform: rotate(35deg);
+  height: 62%;
+  transform: rotate(40deg);
   object-fit: unset;
   size: landscape;
+  margin-left: 70%;
+  margin-top: -19%;
 }
 
 
 @media only screen and (max-width: 1400px){
-    .h1{
+    .header-aiverse{
       width: 45%;
     }
     .h2{
       width: 50%;
-      left: 52%;
       font-size: 60px;
-    }
-    .box{
-      left: 15%;
-    }
-    .p2{
-      left: 53%;
-      top: 97%;
     }
     .techImg{
       width: 20%;
@@ -170,25 +122,20 @@ h3{
 }
 
 @media only screen and (max-width: 1024px){
-  .h1{
+  .header-aiverse{
     width: 55%;
     font-size: 3.5rem;
-    left: 100px;
   }
-  p{
-    top: 190px;
-    left: 115px;
+  .p1{
+    margin-top: 23%;
+    margin-left: -55%;
   }
   .techImg{
-    right: 15%;
-    top: -7%;
     width: 22%;
     transform: rotate(35deg);
   }
   .box{
     width: 40%;
-    height: 15%;
-    left: 13%;
   }
   .h2, .p2{
     display: none;
@@ -203,42 +150,36 @@ h3{
     width: 310px;
   }
   .techImg{
-    right: 7%;
-    top: -8%;
     width: 28%;
     transform: rotate(35deg);
+  }
+  .top-header{
+    width: 120%;
+    margin-left: 40%;
   }
 }
 
 @media only screen and (max-width: 650px){
-  .h1{
+  .App{
+    width: 130%;
+  }
+  .header-aiverse{
     width: 70%;
     text-align: center;
     font-size: 2rem;
-    left: 16%;
-    margin: auto;
   }
-  p{
-    width: 50%;
-    text-align: center;
-    left: 26%;
-    margin: auto;
-    top: 18%;
-  }
+  .p1 {
+    margin-top: 13%;
+    margin-left: -61%;
+}
   .robot{
     width: 280px;
-    left: -1%;
-    top: 55%;
   }
   .box{
-    width: 85%;
-    left: 0%;
-    top: 110%; 
-    height: 15%;
+    width: 70%;
+    margin-left: -30%;
   }
   .techImg{
-    right: 17%;
-    top: 12%;
     width: 44%;
     height: 70%;
     transform: rotate(37deg);
