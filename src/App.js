@@ -1,20 +1,18 @@
 import './App.css';
-import Nft from './NFT';
-import Header from './Header';
-import HowAiverse from './HowToAiverse';
-import Mint from './Mint';
-import Engage from './Engage';
+import Nft from './components/NFT/NFT';
+import Mint from './components/Mint/Mint';
+import Engage from './components/Engage/Engage';
+import Header from './components/Header/Header';
+import HowAiverse from './components/HowToAiverse/HowToAiverse';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-        <HowAiverse />
-        <Engage />
-        <Nft />
-        <Mint />
-      </header>
+      <Header />
+      <HowAiverse />
+      <Engage />
+      <Nft />
+      <Mint />
     </div>
   );
 }

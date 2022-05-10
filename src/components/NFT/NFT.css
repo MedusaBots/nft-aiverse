@@ -1,0 +1,152 @@
+.NFTbody{
+  color: white;
+  background-color: black;
+  height: 100vh;
+}
+.boxer{
+  border: 1px solid #353434;
+  width: 20%;
+  height: 350px;
+  margin-right: 60px;
+  border-top-right-radius: 70px;
+  background: linear-gradient(90deg, #FFFFFF -75.39%, rgb(37 28 28 / 39%) 29.65%);
+  opacity: 0.7;
+}
+
+.carding{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 3rem;
+}
+
+.CardHeader{
+  height: 10px;
+  text-align: left;
+  margin-left: 3rem;
+  font-style: normal;
+  line-height: 4rem;
+  font-size: 3rem;
+  font-weight: 350;
+  width: 50%
+}
+
+.hr{
+  position: relative;
+  top: 6rem;
+  width: 25%;
+  left: -5rem;
+  text-align: left;
+  font-family: 'PT Mono', monospace;
+}
+
+.pTag{
+  font-size: x-large;
+  line-height: 2rem;
+  position: relative;
+  width: 33%;
+  text-align: left;
+  left: 3rem;
+  top: 6rem;
+  font-weight: bold;
+  width: 50%;
+  font-style: normal;
+}
+
+.cardprops{
+  position: relative;
+  text-align: left;
+}
+
+.nftH1{
+  position: relative;
+  font-size: 50px;
+  width: 25rem;
+  top: 1rem;
+  margin: 0;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: normal;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1300px){
+  .boxer{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .boxer{
+    width: 33%;
+  }
+} 
+
+@media only screen and (max-width: 1100px){
+  .boxer{
+    width: 35%;
+    margin: 15px;
+  }
+  .CardHeader{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 11rem;
+  }
+  .pTag{
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .boxer{
+    width: 44%;
+    height: 300px;
+    margin: 15px;
+  }
+  .hr{
+    top: 5rem;
+  }
+  .pTag{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .boxer{
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .CardHeader{
+    font-size: 2.5rem;
+  }
+  .hr{
+    left: 4rem;
+  }
+  .pTag{
+    font-size: 1.4rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .boxer{
+    width: 150%;
+    margin: 0 0 20px;
+  }
+ 
+  .pTag{
+    margin: 0 -55px 0;
+    width: 10%;
+    left: 14rem;
+  }
+  .nftH1{
+    font-size: 3rem;
+  }
+}

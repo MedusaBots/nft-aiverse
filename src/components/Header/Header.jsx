@@ -1,11 +1,11 @@
 import './Header.css';
-import logo from './logo.png';
+import logo from '../../assets/images/logo.png';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import spiral from './spiralBG.png';
+import spiral from '../../assets/images/spiralBG.png';
 import LanguageIcon from '@mui/icons-material/Language';
-import BigHand from './landinghand.png';
-import PoweredBy from './poweredBy.png';
+import BigHand from '../../assets/images/landinghand.png';
+import PoweredBy from '../../assets/images/poweredBy.png';
 import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
 
 const Header = () => {

@@ -1,0 +1,175 @@
+.aiversebg{
+  height: 950px;
+  width: 100%;
+  background-color: black;
+}
+
+.howToFilter {
+  position: absolute;
+  top: 97.5%;
+  width: 100%;
+  height: 130%;
+  background: linear-gradient(158.16deg, rgba(183, 0, 165, 0.76) 31.96%, rgba(107, 0, 157, 0.76) 41.66%, rgba(107, 0, 157, 0.76) 46.07%);
+  opacity: 30%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header-aiverse{
+  background-clip: text;
+  font-style: normal;
+  font-weight: 800;
+  color: #FFFFFF;
+  width: 40%;
+  font-size: 4rem;
+}
+
+.top-header{
+  display: flex;
+  text-align: left;
+  margin-left: 13%;
+}
+
+.p1{
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: xx-large;
+  line-height: 160%;
+  color: white;
+  margin-top: 13%;
+  margin-left: -40%;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.robot{
+  display: flex;
+  width: 378px;
+  transform: scaleX(-1);
+  height: 50%;
+  margin-top: -15%;
+  margin-left: 10%;
+}
+
+.space{
+    width: 28%;
+    position: relative;
+    top: -110px;
+    left: 60%;
+}
+
+.techImg{
+  width: 16%;
+  height: 62%;
+  transform: rotate(40deg);
+  object-fit: unset;
+  size: landscape;
+  margin-left: 70%;
+  margin-top: -19%;
+}
+
+.box{
+  position: absolute;
+  height: 12%;
+  width: 30%;
+  background: #7b71a05c;
+  border-top-right-radius: 50px;
+  margin-left: 9%;
+  padding: 10px 20px;
+}
+
+.imagin {
+  margin-left: 15%;
+  width: 40%;
+  height: 90px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-right: 20px;
+} 
+
+@media only screen and (max-width: 1400px){
+    .header-aiverse{
+      width: 45%;
+    }
+    .h2{
+      width: 50%;
+      font-size: 60px;
+    }
+    .techImg{
+      width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+  .header-aiverse{
+    width: 55%;
+    font-size: 3.5rem;
+  }
+  .p1{
+    margin-top: 23%;
+    margin-left: -55%;
+  }
+  .techImg{
+    width: 22%;
+    transform: rotate(35deg);
+  }
+  .box{
+    width: 40%;
+  }
+  .h2, .p2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .box{
+    width: 50%;
+  }
+  .robot{
+    width: 310px;
+  }
+  .techImg{
+    width: 28%;
+    transform: rotate(35deg);
+  }
+  .top-header{
+    width: 120%;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .App{
+    width: 130%;
+  }
+  .header-aiverse{
+    width: 70%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .p1 {
+    margin-top: 13%;
+    margin-left: -61%;
+  }
+  .robot{
+    width: 280px;
+  }
+  .box{
+    width: 70%;
+    margin-left: -30%;
+  }
+  .techImg{
+    width: 44%;
+    height: 70%;
+    transform: rotate(37deg);
+  }
+}

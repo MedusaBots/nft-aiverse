@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 function Card(props){
    return(
@@ -14,9 +13,6 @@ function Card(props){
                     {props.text}
                 </p>
             </div>
-            
-            
-            
         </h1>
     </div>
    )
