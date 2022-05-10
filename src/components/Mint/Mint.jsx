@@ -1,5 +1,5 @@
 import './Mint.css';
-import logo from './logo.png';
+import logo from '../../assets/images/logo.png';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CopyrightIcon from '@mui/icons-material/Copyright'

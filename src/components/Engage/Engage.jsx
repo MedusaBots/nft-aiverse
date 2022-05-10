@@ -1,10 +1,12 @@
 import "./Engage.css";
+import skull from "../../assets/images/skull.jpg";
 
 const Engage = () => {
   return (
     <div className="engagePage">
+      <div className="engageFilter"></div>
       <div className="engageParent">
-        <div className="engageTitle">Engage yourself with aiverse</div>
+        <p className="engageTitle">Engage yourself with aiverse</p>
         <div className="engageStepBox">
           <div className="engageSteps">
             <p className="engageStepNum">01/</p>
@@ -20,6 +22,7 @@ const Engage = () => {
           </div>
         </div>
       </div>
+      <img src={skull} className="skull" />
     </div>
   );
 };
