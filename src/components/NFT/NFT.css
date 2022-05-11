@@ -15,7 +15,6 @@
 
 .carding{
   display: flex;
-  flex-wrap: wrap;
   margin: auto;
   margin-top: 120px;
   align-items: center;
@@ -57,6 +56,15 @@
   font-style: normal;
 }
 
+.Cardprop {
+  width: 20%;
+  height: 300px;
+  margin: 0 40px;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #FFFFFF -75.39%, rgb(37 28 28 / 39%) 29.65%);
+  border-radius: 0 50px 0 0;
+}
+
 .cardprops{
   position: relative;
   text-align: left;
@@ -68,85 +76,38 @@
   width: 25rem;
   top: 1rem;
   margin: 0;
+  margin-left: 30px;
   font-weight: 800;
   font-stretch: expanded;
   font-style: normal;
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width: 1300px){
-  .boxer{
-    width: 30%;
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 1100px){
-  .boxer{
-    width: 33%;
-  }
-} 
-
-@media only screen and (max-width: 1100px){
-  .boxer{
-    width: 35%;
-    margin: 15px;
-  }
-  .CardHeader{
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-left: 11rem;
-  }
-  .pTag{
-    margin-left: -3rem;
-  }
-}
-
-@media only screen and (max-width: 750px){
-  .boxer{
-    width: 44%;
-    height: 300px;
-    margin: 15px;
-  }
-  .hr{
-    top: 5rem;
-  }
-  .pTag{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    top: 5rem;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .boxer{
+@media only screen and (max-width: 641px){
+  .NFTbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    margin: 0 0 20px;
+    height: auto;
   }
-  .CardHeader{
-    font-size: 2.5rem;
+  .nftH1 {
+    font-size: 50px;
+    text-align: center;
+    top: 0;
   }
-  .hr{
-    left: 4rem;
+  .carding {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: inherit;
   }
-  .pTag{
-    font-size: 1.4rem;
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 350px){
-  .boxer{
-    width: 150%;
-    margin: 0 0 20px;
-  }
- 
-  .pTag{
-    margin: 0 -55px 0;
-    width: 10%;
-    left: 14rem;
-  }
-  .nftH1{
-    font-size: 3rem;
+  .Cardprop {
+    width: 80%;
+    height: 300px;
+    margin: 20px 0;
+    padding: 20px 0;
   }
 }

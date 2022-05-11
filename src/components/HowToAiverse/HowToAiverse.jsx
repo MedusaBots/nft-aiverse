@@ -8,7 +8,7 @@ function HowAiverse(){
         <div className='aiversebg'>
             <div className="howToFilter"></div>
             <div className='top-header'>
-                <h1 className='header-aiverse'><span>How do Aiverse NFTs work?</span></h1>
+                <h1 className='header-aiverse'>How do Aiverse NFTs work?</h1>
                 <p className='p1'>Super ai generated images create your <br/>imagination to reality</p>
             </div>
             <img src={Tech} className="techImg"/>
