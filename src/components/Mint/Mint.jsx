@@ -1,4 +1,5 @@
 import './Mint.css';
+import { useState } from 'react';
 import logo from '../../assets/images/logo.png';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -6,14 +7,38 @@ import CopyrightIcon from '@mui/icons-material/Copyright'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Mint = () => {
+    const [phase, setPhase] = useState("");
+    const [generatedImage, setGeneratedImage] = useState("");
+
+    const handlePhaseInput = (e) => {
+        console.log(e.target.value);
+        setPhase(e.target.value);
+    }
+
+    const handleMinting = () => {
+
+        fetch(`http://18.222.203.93/nft/${phase}`, {
+            method: "GET"
+        }).then(data => {
+            data.json().then(response => {
+                fetch(response.query, {
+                    method: "GET"
+                }).then(data1 => {
+                    data1.json().then(response1 => {
+                        setGeneratedImage(response1.image)
+                    })
+                })
+            })
+        });
+    }
 
     return (
         <div className='mintParent'>
             <p className='mintTitle'>Mint Your First</p>
             <p className='mintTitleBold'>AI Generated NFTs</p>
             <div className='mintButtonParent'>
-                <input className='mintInput' placeholder='Enter your phase' />
-                <button className='buttonMint'>Mint Now</button>
+                <input className='mintInput' placeholder='Enter your phase' onChange={handlePhaseInput}/>
+                <button className='buttonMint' onClick={handleMinting}>Mint Now</button>
             </div>
             <div>
                 <div className='mintDesign'></div>
@@ -75,6 +100,7 @@ const Mint = () => {
                 <p className='mintTermsAndPolicy mintTermsAndPolicyMiddle'>Privacy Policy</p>
                 <p className='mintTermsAndPolicy'>Terms & Conditions</p>
             </div>
+            <img className='imgg' src={generatedImage} />
         </div>
     );
 }

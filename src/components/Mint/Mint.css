@@ -66,7 +66,6 @@
     right: 2%;
     width: 20%;
     height: 45%;
-    /* clip-path: polygon(0 0, 60% 0, 100% 40%, 100% 70%, 100% 100%, 39% 100%, 0 60%, 0% 30%); */
     clip-path: polygon(0 0, 50% 0, 100% 30%, 100% 100%, 44% 100%, 0 66%);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 11.24%, rgba(255, 255, 255, 0.024) 141.47%);
     backdrop-filter: blur(60px);
@@ -329,7 +328,7 @@
     
     .mintDesign {
         position: absolute;
-        top: 482%;
+        top: 460%;
         right: 2%;
         width: 85%;
         height: 45%;
@@ -338,7 +337,7 @@
     
     .elipse{
         position: absolute;
-        top: 498%;
+        top: 480%;
         right: 12%;
         width: 65%;
         height: 50%;
@@ -445,5 +444,10 @@
 
     .mintTermsAndPolicyParent {
         flex-direction: column;
+    }
+    .imgg {
+        position: absolute;
+        top: 487%;
+        right: 20%;
     }
 }
