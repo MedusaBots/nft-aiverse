@@ -8,7 +8,6 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Mint = () => {
     const [phase, setPhase] = useState("");
-    const [generatedImage, setGeneratedImage] = useState("");
 
     const handlePhaseInput = (e) => {
         console.log(e.target.value);
@@ -25,7 +24,7 @@ const Mint = () => {
                     method: "GET"
                 }).then(data1 => {
                     data1.json().then(response1 => {
-                        setGeneratedImage(response1.image)
+                        console.log(response1.image);
                     })
                 })
             })
@@ -100,7 +99,6 @@ const Mint = () => {
                 <p className='mintTermsAndPolicy mintTermsAndPolicyMiddle'>Privacy Policy</p>
                 <p className='mintTermsAndPolicy'>Terms & Conditions</p>
             </div>
-            <img className='imgg' src={generatedImage} />
         </div>
     );
 }
