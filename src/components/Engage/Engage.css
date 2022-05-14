@@ -80,6 +80,40 @@
     border-bottom-right-radius: 80px;
 }
 
+@media screen and (max-width: 1440px) {
+    .engageSteps {
+        width: 300px;
+    }
+    .engageStepName {
+        font-size: 30px;
+    }
+    .skull {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .skull {
+        width: 20%;
+        top: 307%;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .engageSteps {
+        width: 280px;
+    }
+    .engageStepName {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .skull {
+        width: 23%;
+    }
+}
+
 @media screen and (max-width: 641px) {
     .engagePage {
         justify-content: flex-start;
