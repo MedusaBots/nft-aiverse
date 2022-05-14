@@ -111,6 +111,7 @@
 @media screen and (max-width: 960px) {
     .skull {
         width: 23%;
+        top: 333%;
     }
 }
 

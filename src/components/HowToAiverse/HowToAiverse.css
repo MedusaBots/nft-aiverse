@@ -217,7 +217,7 @@
     margin-top: 15%;
   }
   .techImg {
-    width: 19%;
+    width: 15%;
     margin-left: 63%;
   }
   .robot {
@@ -234,11 +234,10 @@
     margin-left: 60%;
   }
   .robot {
-    margin-top: -23.5%;
+    margin-top: -19%;
+    height: 30%;
+    width: 300px;
   }
-}
-
-@media screen and (max-width: 960px) {
   .header-aiverse {
     font-size: 30px;
   }
