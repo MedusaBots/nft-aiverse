@@ -301,6 +301,12 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+    .mintDesign {
+        top: 450%;
+    }
+}
+
 @media screen and (max-width: 641px) {
     .mintParent {
         height: auto;
