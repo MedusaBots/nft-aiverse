@@ -445,9 +445,4 @@
     .mintTermsAndPolicyParent {
         flex-direction: column;
     }
-    .imgg {
-        position: absolute;
-        top: 487%;
-        right: 20%;
-    }
 }
