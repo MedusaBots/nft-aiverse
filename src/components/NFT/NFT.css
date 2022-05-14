@@ -82,6 +82,30 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 1440px) {
+  .Cardprop {
+    height: 280px;
+    width: 22%;
+  }
+  .carding {
+    margin-top: 145px;
+  }
+  .CardHeader {
+    height: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hr {
+    left: -3rem;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .Cardprop {
+    width: 25%;
+  }
+}
+
 @media only screen and (max-width: 641px){
   .NFTbody {
     display: flex;

@@ -275,6 +275,32 @@
     margin: 0 50px;
 }
 
+@media screen and (max-width: 1440px) {
+    .mintDesign {
+        right: 0;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .mintFooterText {
+        padding: 0 48px;
+    }
+    .internalLink {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .mintDesign {
+        width: 28%;
+        margin-right: 10%;
+    }
+    .internalLink {
+        font-size: x-small;
+    }
+}
+
 @media screen and (max-width: 641px) {
     .mintParent {
         height: auto;
