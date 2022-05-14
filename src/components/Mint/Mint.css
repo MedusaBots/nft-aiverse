@@ -289,6 +289,9 @@
     .internalLink {
         font-size: small;
     }
+    .mintDesign {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1056px) {
@@ -360,7 +363,7 @@
     
     .mintDesign {
         position: absolute;
-        top: 460%;
+        top: 495%;
         right: 2%;
         width: 85%;
         height: 45%;
@@ -384,7 +387,7 @@
         font-size: xx-large;
         color: white;
         margin-left: 30px;
-        margin-top: 110%;
+        /* margin-top: 110%; */
         margin-bottom: 5px;
     }
 

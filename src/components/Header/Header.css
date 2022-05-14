@@ -51,6 +51,7 @@
     width: calc(100% - 20px);
     padding: 15px 10px;
     background: rgba(255, 255, 255, 0.1);
+    height: calc(10% - 30px);
 }
 
 .logoTitleParent {
@@ -130,11 +131,13 @@
     width: 60%;
     padding-left: 60px;
     color: white;
+    height: calc(70% - 5% - 66px);
+    padding: 5% 0;
 }
 
 .headerAttractiveHeading {
     font-size: 80px;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: bold;
     text-align: start;
 }
@@ -175,7 +178,8 @@
     border-bottom: 2px solid grey;
     width: 100%;
     color: white;
-    margin-top: 6%;
+    margin-top: 2%;
+    height: 5%;
 }
 
 .headerBottomContent {
