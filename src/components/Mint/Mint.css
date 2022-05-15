@@ -377,7 +377,7 @@
     
     .elipse{
         position: absolute;
-        top: 480%;
+        /* top: 480%; */
         right: 12%;
         width: 65%;
         height: 50%;
@@ -484,6 +484,11 @@
 
     .mintTermsAndPolicyParent {
         flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .mintTermsAndPolicyMiddle {
+        padding: 5px 0;
     }
 }
 
