@@ -53,7 +53,7 @@ const Mint = () => {
             <div className='mintFooter'>
                 <img className='logo' src={logo} />
                 <div className='maintFooterTextParent'>
-                    <p className='mintFooterText'>Sharp the</p>
+                    <p className='mintFooterText'>Shaping the</p>
                     <p className='mintFooterText'>AI Industry </p>
                 </div>
                 <div className='mintFooterLinkParent'>
@@ -74,7 +74,7 @@ const Mint = () => {
             <div className='mintFooterMobile'>
                 <img className='logoMobile' src={logo} />
                 <div className='maintFooterTextParentMobile'>
-                    <p className='mintFooterTextMobile'>Sharp the</p>
+                    <p className='mintFooterTextMobile'>Shaping the</p>
                     <p className='mintFooterTextMobile'>AI Industry </p>
                 </div>
             </div>

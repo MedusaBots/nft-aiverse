@@ -212,6 +212,9 @@
   .howToFilter {
     top: 96.1%;
   }
+  .header-aiverse {
+    font-size: xx-large;
+  }
   .p1 {
     font-size: 25px;
     margin-top: 15%;
@@ -221,6 +224,7 @@
     margin-left: 63%;
   }
   .robot {
+    height: 40%;
     margin-top: -21.5%;
   }
   .box {
@@ -240,6 +244,12 @@
   }
   .header-aiverse {
     font-size: 30px;
+  }
+  .box {
+    width: 70%;
+  }
+  .space {
+    height: 80%;
   }
 }
 

@@ -95,8 +95,9 @@
 
 @media screen and (min-width: 1057px) and(max-width: 1248px) {
     .skull {
-        width: 20%;
-        top: 307%;
+        /* width: 20%;
+        top: 307%; */
+        display: none;
     }
 }
 
@@ -107,12 +108,16 @@
     .engageStepName {
         font-size: 26px;
     }
+    .skull {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 642px) and (max-width: 960px) {
     .skull {
-        width: 23%;
-        top: 333%;
+        /* width: 23%;
+        top: 333%; */
+        display: none;
     }
 }
 
