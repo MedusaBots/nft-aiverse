@@ -80,7 +80,7 @@
     border-bottom-right-radius: 80px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1249px) and (max-width: 1440px) {
     .engageSteps {
         width: 300px;
     }
@@ -93,14 +93,14 @@
     }
 }
 
-@media screen and (max-width: 1248px) {
+@media screen and (min-width: 1057px) and(max-width: 1248px) {
     .skull {
         width: 20%;
         top: 307%;
     }
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (min-width: 961px) and(max-width: 1056px) {
     .engageSteps {
         width: 280px;
     }
@@ -109,7 +109,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 642px) and (max-width: 960px) {
     .skull {
         width: 23%;
         top: 333%;
@@ -121,7 +121,7 @@
         justify-content: flex-start;
         flex-direction: column;
         /* height: 140vh; */
-        height: 100vh;
+        height: auto;
     }
     .engageFilter {
         width: 100%;
@@ -170,8 +170,15 @@
         font-size: x-large;
     }
     .skull {
-        top: 265%;
+        /* top: 265%;
         width: 80%;
-        left: 10%;
+        left: 10%; */
+        display: none;
+    }
+}
+
+@media screen and (max-height: 580px) {
+    .engageParent {
+        padding: 50px 0;
     }
 }

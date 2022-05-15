@@ -132,18 +132,18 @@
     padding-left: 60px;
     color: white;
     height: calc(70% - 5% - 66px);
-    padding: 5% 0;
+    padding: 5%;
 }
 
 .headerAttractiveHeading {
-    font-size: 80px;
+    font-size: 70px;
     margin: 0;
     font-weight: bold;
     text-align: start;
 }
 
 .headerSubHeading {
-    font-size: 60px;
+    font-size: 50px;
     margin: 8px 0;
     text-align: start;
 }
@@ -189,13 +189,17 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 1440px) {
+.headerBottom::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 1249px) and (max-width: 1440px) {
     .headerBottom {
         margin-top: 0;
     }
 }
 
-@media screen and (max-width: 1248px) {
+@media screen and (min-width: 1057px) and (max-width: 1248px) {
     .bigHand {
         height: 95%;
     }
@@ -204,7 +208,7 @@
     }
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (min-width: 961px) and (max-width: 1056px) {
     .headerAttractiveHeading {
         font-size: 40px;
     }
@@ -225,13 +229,13 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 865px) and (max-width: 960px) {
     .headerBottom {
         margin-top: 30px;
     }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (min-width: 642px) and (max-width: 864px) {
     .mintYourNft {
         padding: 8px 50px;
     }
@@ -248,7 +252,7 @@
 
 @media screen and (max-width: 641px) {
     .headerParent {
-        height: 70%;
+        height: 100%;
     }
 
     .headerEllipse {
@@ -287,6 +291,7 @@
     .headerContent {
         padding: 5%;
         width: 90%;
+        height: auto;
         justify-content: center;
         align-items: center;
         background-image: url('../../assets/images/landinghand.png');
@@ -322,7 +327,7 @@
     }
 
     .mintYourNft {
-        padding: 15px 20px;
+        padding: 15px 35px;
         font-size: 15px;
     }
 
@@ -334,6 +339,16 @@
     }
     
     .headerBottomContent {
+        white-space: nowrap;
         margin: 0 10px;
     }
-}    
+} 
+
+@media screen and (max-height: 641px) {
+    .headerAttractiveHeading {
+        font-size: 45px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
+    }
+}

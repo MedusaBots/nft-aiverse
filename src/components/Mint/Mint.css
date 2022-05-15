@@ -275,14 +275,15 @@
     margin: 0 50px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1249px) and (max-width: 1440px) {
     .mintDesign {
-        right: 0;
-        width: 25%;
+        /* right: 0;
+        width: 25%; */
+        display: none;
     }
 }
 
-@media screen and (max-width: 1248px) {
+@media screen and (min-width: 1057px) and (max-width: 1248px) {
     .mintFooterText {
         padding: 0 48px;
     }
@@ -294,7 +295,7 @@
     }
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (min-width: 961px) and(max-width: 1056px) {
     .mintDesign {
         width: 28%;
         margin-right: 10%;
@@ -304,7 +305,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 642px) and(max-width: 960px) {
     .mintDesign {
         top: 450%;
     }
@@ -362,12 +363,13 @@
     }
     
     .mintDesign {
-        position: absolute;
+        /* position: absolute;
         top: 495%;
         right: 2%;
         width: 85%;
         height: 45%;
-        margin: 45% 5% 40px 5%;
+        margin: 45% 5% 40px 5%; */
+        display: none;
     }
     
     .elipse{
@@ -479,5 +481,14 @@
 
     .mintTermsAndPolicyParent {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 641px) {
+    .mintFooterText {
+        padding: 0 50px;
+    }
+    .internalLink {
+        font-size: small;
     }
 }

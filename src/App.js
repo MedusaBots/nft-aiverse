@@ -14,7 +14,7 @@ function App() {
       <Engage />
       <Nft />
       <Mint />
-      <Carousl />
+      {/* <Carousl /> */}
     </div>
   );
 }
