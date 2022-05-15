@@ -188,7 +188,7 @@
   width: 100%;
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
-  z-index: 1000;
+  z-index: 2;
   height: 5%;
   margin-top: 20px;
 }
