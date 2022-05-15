@@ -50,6 +50,7 @@ const Header = () => {
                 </div>
                 </div>       
             </div>
+            <div className='section'>
             <div className='headerBottom'>
                 <p className='headerBottomContent'>REWARDS</p>
                 <p className='headerBottomContent'>AIRDROPS</p>
@@ -63,6 +64,7 @@ const Header = () => {
                 <p className='headerBottomContent'>EVER</p>
                 <p className='headerBottomContent'>GENERATED</p>
                 <p className='headerBottomContent'>NFTS</p>
+            </div>
             </div>
         </div>
     )

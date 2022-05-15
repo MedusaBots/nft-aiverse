@@ -20,9 +20,9 @@ const Engage = () => {
             <p className="engageStepNum">03/</p>
             <p className="engageStepName">Get Rewards & Early Access</p>
           </div>
+          <img src={skull} className="skull" />
         </div>
       </div>
-      <img src={skull} className="skull" />
     </div>
   );
 };
