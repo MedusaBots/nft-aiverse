@@ -93,8 +93,9 @@
 }
 
 .headerInternalLink {
-  color: white;
-  margin: 0 30px;
+    color: white;
+    margin: 0 30px;
+    cursor: pointer;
 }
 
 .headerExternalLink {
@@ -126,24 +127,25 @@
 }
 
 .externalLink {
-  border: none;
-  outline: none;
-  color: white;
-  margin: 0 15px;
-  background-color: transparent;
-  padding: 0;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0 15px;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 .headerContent {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 60%;
-  padding-left: 60px;
-  color: white;
-  height: calc(70% - 5% - 66px);
-  padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 60px;
+    color: white;
+    height: calc(70% - 5% - 66px);
+    padding: 5%;
 }
 
 .headerAttractiveHeading {
@@ -160,16 +162,17 @@
 }
 
 .headerHeadingContent {
-  margin: 0;
-  line-height: 1.5;
-  text-align: start;
+    margin: 0;
+    line-height: 1.5;
+    text-align: start;
+    font-size: large;
 }
 
 .poweredBy {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 
 .mintYourNft {
@@ -237,46 +240,58 @@
 }
 
 @media screen and (min-width: 961px) and (max-width: 1056px) {
-  .headerAttractiveHeading {
-    font-size: 40px;
-  }
-  .headerSubHeading {
-    font-size: 50px;
-  }
-  .bigHand {
-    width: 42%;
-    height: 90%;
-    right: 0%;
-  }
-  .mintYourNft {
-    font-size: 18px;
-    padding: 20px 50px;
-  }
-  .section {
-    margin-top: 72px;
-  }
+    .headerAttractiveHeading {
+        font-size: 40px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
+    }
+    .bigHand {
+        width: 42%;
+        height: 90%;
+        right: 0%;
+    }
+    .mintYourNft {
+        font-size: 18px;
+        padding: 20px 50px;
+    }
+    .section {
+        margin-top: 72px;
+    }
 }
 
 @media screen and (min-width: 865px) and (max-width: 960px) {
-  .section {
-    margin-top: 80px;
-  }
+    .section {
+        margin-top: 80px;
+    }
+    .headerAttractiveHeading {
+        font-size: 40px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 642px) and (max-width: 864px) {
-  .mintYourNft {
-    padding: 10px 10px;
-    width: 200px;
-  }
-  .bigHand {
-    width: 50%;
-  }
-  .headerInternalLinks {
-    display: none;
-  }
-  .section {
-    display: none;
-  }
+    .mintYourNft {
+        padding: 10px 10px;
+        width: 200px;
+    }
+    .bigHand {
+        width: 50%;
+    }
+    .headerInternalLinks {
+        display: none;
+    }
+    .section {
+        display: none;
+    }
+    .headerAttractiveHeading {
+        font-size: 40px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 641px) {
@@ -346,19 +361,14 @@
     font-weight: bold;
   }
 
-  .poweredBy {
-    flex-direction: row-reverse;
-  }
+    .poweredBy {
+        justify-content: center;
+    }
 
-  .poweredByLogo {
-    width: 50%;
-    height: 80px;
-  }
-
-  .mintYourNft {
-    padding: 15px 35px;
-    font-size: 15px;
-  }
+    .mintYourNft {
+        padding: 15px 35px;
+        font-size: 15px;
+    }
 
   .headerBottom {
     display: flex;

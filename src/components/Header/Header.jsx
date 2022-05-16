@@ -13,9 +13,12 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import { Bitski } from "bitski";
 import { useState, useEffect } from "react";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
-const Header = () => {
+const Header = (props) => {
   const [walletAddress, setWalletAddress] = useState("");
+  const internalLinks = ['HOME', 'ABOUT', 'MINT', 'CONTACT US'];
+
   const providerOptions = {
     metmask: {
       package: true,
@@ -65,8 +68,13 @@ const Header = () => {
       connectWallet();
     }
   }, []);
+
+    const handleScrollTo = (data) => {
+        props.passData(data.toLowerCase());
+    }
+
   return (
-    <div className="headerParent">
+    <div className="headerParent" id='home'>
       <div className="headerEllipse">
         <div className="headerEllipseTwo"></div>
       </div>
@@ -81,10 +89,9 @@ const Header = () => {
           </div>
         </div>
         <div className="headerInternalLinks">
-          <p className="headerInternalLink">HOME</p>
-          <p className="headerInternalLink">ABOUT</p>
-          <p className="headerInternalLink">MINT</p>
-          <p className="headerInternalLink">CONTACT US</p>
+        {internalLinks.map((item,index) => {
+                        return <p className='headerInternalLink' onClick={() => handleScrollTo(item)} key={index}>{item}</p>
+                    })}
         </div>
         <div className="headerExternalLink">
           <button className="connectButton" onClick={connectWallet}>
@@ -95,7 +102,7 @@ const Header = () => {
                 )}`
               : "Connect Wallet"}
           </button>
-          <FacebookSharpIcon className="externalLink" />
+          <TelegramIcon className="externalLink" />
           <TwitterIcon className="externalLink" />
           <EmailIcon className="externalLink" />
         </div>
@@ -110,12 +117,9 @@ const Header = () => {
           <p className="headerSubHeading">Imaginate & Generate</p>
           <p className="headerHeadingContent">
             These are AI generated image NFTs which a user can create by typing
-            a phrase and
-            <br />
-            making a NFT of the image.
+            a phrase and making a NFT of the image.
           </p>
           <div className="poweredBy">
-            <img className="poweredByLogo" src={PoweredBy} />
             <button className="mintYourNft">Mint your NFT </button>
           </div>
         </div>

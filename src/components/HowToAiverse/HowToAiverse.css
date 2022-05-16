@@ -231,7 +231,7 @@
   }
   .robot {
     height: 40%;
-    margin-top: -21.5%;
+    margin-top: -18.5%;
   }
   .box {
     width: 42%;
@@ -290,10 +290,11 @@
     height: 50%;
     margin-left: 25%;
     margin-top: -15%;
+    opacity: 50%;
   }
   .robot {
     height: 25%;
-    margin-top: -5%;
+    margin-top: 8%;
     width: 40%;
     margin-left: -2%;
   }

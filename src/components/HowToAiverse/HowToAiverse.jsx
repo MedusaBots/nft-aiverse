@@ -5,7 +5,7 @@ import Photo from "../../assets/images/robot3.png";
 
 function HowAiverse(){
     return(
-        <div className='aiversebg'>
+        <div className='aiversebg' id='about'>
             <div className="howToFilter"></div>
             <div className='top-header'>
                 <h1 className='header-aiverse'>How do Aiverse NFTs work?</h1>
