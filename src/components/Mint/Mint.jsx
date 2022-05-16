@@ -1,5 +1,6 @@
 import './Mint.css';
 import { useState } from 'react';
+import Snackbar from '@mui/material/Snackbar';
 import logo from '../../assets/images/logo.png';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -8,14 +9,14 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Mint = () => {
     const [phase, setPhase] = useState("");
+    const [open, setOpen] = useState(false);
+    const [snackBarMessage, setSnackBarMessage] = useState("Please Enter the Phase!!!")
 
     const handlePhaseInput = (e) => {
-        console.log(e.target.value);
         setPhase(e.target.value);
     }
 
     const handleMinting = () => {
-
         fetch(`http://18.222.203.93/nft/${phase}`, {
             method: "GET"
         }).then(data => {
@@ -29,7 +30,19 @@ const Mint = () => {
                 })
             })
         });
+
+        if(phase == "") {
+            setSnackBarMessage("Please Enter the Phase!!!")
+        }
+        else {
+            setSnackBarMessage("Coming Soon!!!")
+        }
+        setOpen(true);
     }
+
+    const handleClose = () => {
+        setOpen(false);
+      };
 
     return (
         <div className='mintParent'>
@@ -99,6 +112,12 @@ const Mint = () => {
                 <p className='mintTermsAndPolicy mintTermsAndPolicyMiddle'>Privacy Policy</p>
                 <p className='mintTermsAndPolicy'>Terms & Conditions</p>
             </div>
+            <Snackbar style={{ opacity: "75%" }}
+                open={open}
+                autoHideDuration={3000}
+                message={snackBarMessage}
+                onClose={handleClose}
+            />
         </div>
     );
 }
