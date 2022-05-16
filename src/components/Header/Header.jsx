@@ -4,15 +4,18 @@ import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import spiral from '../../assets/images/spiralBG.png';
 import LanguageIcon from '@mui/icons-material/Language';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import BigHand from '../../assets/images/landinghand.png';
-import PoweredBy from '../../assets/images/poweredBy.png';
-import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
 
-const Header = () => {
+const Header = (props) => {
+    const internalLinks = ['HOME', 'ABOUT', 'MINT', 'CONTACT US'];
 
+    const handleScrollTo = (data) => {
+        props.passData(data.toLowerCase());
+    }
 
     return (
-        <div className='headerParent'>
+        <div className='headerParent' id='home'>
             <div className='headerEllipse'>
                 <div className='headerEllipseTwo'></div>
             </div>
@@ -27,14 +30,13 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='headerInternalLinks'>
-                    <p className='headerInternalLink'>HOME</p>
-                    <p className='headerInternalLink'>ABOUT</p>
-                    <p className='headerInternalLink'>MINT</p>
-                    <p className='headerInternalLink'>CONTACT US</p>
+                    {internalLinks.map((item,index) => {
+                        return <p className='headerInternalLink' onClick={() => handleScrollTo(item)} key={index}>{item}</p>
+                    })}
                 </div>
                 <div className='headerExternalLink'>
                     <button className='connectButton'> Connect Wallet</button>
-                    <FacebookSharpIcon className='externalLink' />
+                    <TelegramIcon className='externalLink' />
                     <TwitterIcon className='externalLink' />
                     <EmailIcon className='externalLink' />
                 </div>
@@ -43,9 +45,8 @@ const Header = () => {
                 <div style={{backdropFilter: 'blur(1px)'}}>
                 <p className='headerAttractiveHeading'>"Own a piece of<br/>Artificial Intelligence"</p>
                 <p className='headerSubHeading'>Imaginate & Generate</p>
-                <p className='headerHeadingContent'>These are AI generated image NFTs which a user can create by typing a phrase and<br/>making a NFT of the image.</p>
+                <p className='headerHeadingContent'>These are AI generated image NFTs which a user can create by typing a phrase and making a NFT of the image.</p>
                 <div className='poweredBy'>
-                    <img className='poweredByLogo' src={PoweredBy} />
                     <button className='mintYourNft'>Mint your NFT </button>
                 </div>
                 </div>       

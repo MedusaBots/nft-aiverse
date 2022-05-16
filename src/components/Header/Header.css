@@ -95,6 +95,7 @@
 .headerInternalLink {
     color: white;
     margin: 0 30px;
+    cursor: pointer;
 }
 
 .headerExternalLink {
@@ -122,6 +123,7 @@
     margin: 0 15px;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .headerContent {
@@ -129,7 +131,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     padding-left: 60px;
     color: white;
     height: calc(70% - 5% - 66px);
@@ -153,11 +155,12 @@
     margin: 0;
     line-height: 1.5;
     text-align: start;
+    font-size: large;
 }
 
 .poweredBy {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 50px;
 }
@@ -231,7 +234,7 @@
         font-size: 40px;
     }
     .headerSubHeading {
-        font-size: 50px;
+        font-size: 30px;
     }
     .bigHand {
         width: 42%;
@@ -251,6 +254,12 @@
     .section {
         margin-top: 80px;
     }
+    .headerAttractiveHeading {
+        font-size: 40px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 642px) and (max-width: 864px) {
@@ -266,6 +275,12 @@
     }
     .section {
         display: none;
+    }
+    .headerAttractiveHeading {
+        font-size: 40px;
+    }
+    .headerSubHeading {
+        font-size: 30px;
     }
 }
 
@@ -337,12 +352,7 @@
     }
 
     .poweredBy {
-        flex-direction: row-reverse;
-    }
-
-    .poweredByLogo {
-        width: 50%;
-        height: 80px;
+        justify-content: center;
     }
 
     .mintYourNft {

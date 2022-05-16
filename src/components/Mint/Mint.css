@@ -63,6 +63,7 @@
 }
 
 .mintDesign {
+    display: none;
     position: absolute;
     top: 420%;
     right: 2%;

@@ -4,8 +4,8 @@ import Snackbar from '@mui/material/Snackbar';
 import logo from '../../assets/images/logo.png';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import CopyrightIcon from '@mui/icons-material/Copyright'
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 const Mint = () => {
     const [phase, setPhase] = useState("");
@@ -45,7 +45,7 @@ const Mint = () => {
       };
 
     return (
-        <div className='mintParent'>
+        <div className='mintParent' id='mint'>
             <p className='mintTitle'>Mint Your First</p>
             <p className='mintTitleBold'>AI Generated NFTs</p>
             <div className='mintButtonParent'>
@@ -78,7 +78,7 @@ const Mint = () => {
                     </div>
                     <div className='mintFooterExternalLink'>
                         <TwitterIcon className='externalLink' />
-                        <FacebookOutlinedIcon className='externalLink' />
+                        <TelegramIcon className='externalLink' />
                         <YouTubeIcon className='externalLink' />
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Mint = () => {
                     </div>
                     <div className='mintFooterExternalLink'>
                         <TwitterIcon className='externalLink' />
-                        <FacebookOutlinedIcon className='externalLink mintFooterExternalLinkMiddle' />
+                        <TelegramIcon className='externalLink mintFooterExternalLinkMiddle' />
                         <YouTubeIcon className='externalLink' />
                     </div>
                 </div>
@@ -112,12 +112,12 @@ const Mint = () => {
                 <p className='mintTermsAndPolicy mintTermsAndPolicyMiddle'>Privacy Policy</p>
                 <p className='mintTermsAndPolicy'>Terms & Conditions</p>
             </div>
-            <Snackbar style={{ opacity: "75%" }}
+            {/* <Snackbar
                 open={open}
                 autoHideDuration={3000}
                 message={snackBarMessage}
                 onClose={handleClose}
-            />
+            /> */}
         </div>
     );
 }
