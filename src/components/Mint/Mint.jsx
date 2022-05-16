@@ -112,12 +112,12 @@ const Mint = () => {
                 <p className='mintTermsAndPolicy mintTermsAndPolicyMiddle'>Privacy Policy</p>
                 <p className='mintTermsAndPolicy'>Terms & Conditions</p>
             </div>
-            {/* <Snackbar
+            <Snackbar
                 open={open}
                 autoHideDuration={3000}
                 message={snackBarMessage}
                 onClose={handleClose}
-            /> */}
+            />
         </div>
     );
 }
