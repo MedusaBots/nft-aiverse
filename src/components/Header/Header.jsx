@@ -16,7 +16,6 @@ import { useState, useEffect } from "react";
 import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Header = (props) => {
-  const [walletAddress, setWalletAddress] = useState("");
   const internalLinks = ["HOME", "ABOUT", "MINT", "CONTACT US"];
 
   const providerOptions = {
@@ -61,10 +60,10 @@ const Header = (props) => {
     await window.ethereum.send("eth_requestAccounts");
     const accounts = await web3.eth.getAccounts();
     const account = accounts[0];
-    setWalletAddress(account);
+    props.setWalletAddress(account);
   };
   useEffect(() => {
-    if (walletAddress != "") {
+    if (props.walletAddress) {
       connectWallet();
     }
   }, []);
@@ -103,10 +102,13 @@ const Header = (props) => {
         </div>
         <div className="headerExternalLink">
           <button className="connectButton" onClick={connectWallet}>
-            {walletAddress
-              ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(
-                  walletAddress.length - 5,
-                  walletAddress.length
+            {props.walletAddress
+              ? `${props.walletAddress.slice(
+                  0,
+                  6
+                )}...${props.walletAddress.slice(
+                  props.walletAddress.length - 5,
+                  props.walletAddress.length
                 )}`
               : "Connect Wallet"}
           </button>
