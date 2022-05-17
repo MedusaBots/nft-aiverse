@@ -13,11 +13,11 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import { Bitski } from "bitski";
 import { useState, useEffect } from "react";
-import TelegramIcon from '@mui/icons-material/Telegram';
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 const Header = (props) => {
   const [walletAddress, setWalletAddress] = useState("");
-  const internalLinks = ['HOME', 'ABOUT', 'MINT', 'CONTACT US'];
+  const internalLinks = ["HOME", "ABOUT", "MINT", "CONTACT US"];
 
   const providerOptions = {
     metmask: {
@@ -33,14 +33,14 @@ const Header = (props) => {
     walletconnect: {
       package: WalletConnectProvider, // required
       options: {
-        infuraId: "INFURA_ID", // required
+        infuraId: "05d3e1bd8cd74be5ab1c1c7d62cc86f0", // required
       },
     },
     coinbasewallet: {
       package: CoinbaseWalletSDK, // Required
       options: {
         appName: "web3modal", // Required
-        infuraId: "INFURA_ID", // Required
+        infuraId: "05d3e1bd8cd74be5ab1c1c7d62cc86f0", // Required
         rpc: "", // Optional if `infuraId` is provided; otherwise it's required
         chainId: 1, // Optional. It defaults to 1 if not provided
         darkMode: false, // Optional. Use dark theme, defaults to false
@@ -69,12 +69,12 @@ const Header = (props) => {
     }
   }, []);
 
-    const handleScrollTo = (data) => {
-        props.passData(data.toLowerCase());
-    }
+  const handleScrollTo = (data) => {
+    props.passData(data.toLowerCase());
+  };
 
   return (
-    <div className="headerParent" id='home'>
+    <div className="headerParent" id="home">
       <div className="headerEllipse">
         <div className="headerEllipseTwo"></div>
       </div>
@@ -89,9 +89,17 @@ const Header = (props) => {
           </div>
         </div>
         <div className="headerInternalLinks">
-        {internalLinks.map((item,index) => {
-                        return <p className='headerInternalLink' onClick={() => handleScrollTo(item)} key={index}>{item}</p>
-                    })}
+          {internalLinks.map((item, index) => {
+            return (
+              <p
+                className="headerInternalLink"
+                onClick={() => handleScrollTo(item)}
+                key={index}
+              >
+                {item}
+              </p>
+            );
+          })}
         </div>
         <div className="headerExternalLink">
           <button className="connectButton" onClick={connectWallet}>
