@@ -5,13 +5,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import spiral from "../../assets/images/spiralBG.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import BigHand from "../../assets/images/landinghand.png";
-import PoweredBy from "../../assets/images/poweredBy.png";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
-import Web3 from "web3";
-import Web3Modal from "web3modal";
-import WalletConnectProvider from "@walletconnect/web3-provider";
-import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
-import { Bitski } from "bitski";
+// import PoweredBy from "../../assets/images/poweredBy.png";
+// import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
+// import Web3 from "web3";
+// import Web3Modal from "web3modal";
+// import WalletConnectProvider from "@walletconnect/web3-provider";
+// import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
+// import { Bitski } from "bitski";
 import { useState, useEffect } from "react";
 import TelegramIcon from '@mui/icons-material/Telegram';
 
@@ -19,55 +19,56 @@ const Header = (props) => {
   const [walletAddress, setWalletAddress] = useState("");
   const internalLinks = ['HOME', 'ABOUT', 'MINT', 'CONTACT US'];
 
-  const providerOptions = {
-    metmask: {
-      package: true,
-    },
-    bitski: {
-      package: Bitski, // required
-      options: {
-        clientId: "BITSKI_CLIENT_ID", // required
-        callbackUrl: "BITSKI_CALLBACK_URL", // required
-      },
-    },
-    walletconnect: {
-      package: WalletConnectProvider, // required
-      options: {
-        infuraId: "INFURA_ID", // required
-      },
-    },
-    coinbasewallet: {
-      package: CoinbaseWalletSDK, // Required
-      options: {
-        appName: "web3modal", // Required
-        infuraId: "INFURA_ID", // Required
-        rpc: "", // Optional if `infuraId` is provided; otherwise it's required
-        chainId: 1, // Optional. It defaults to 1 if not provided
-        darkMode: false, // Optional. Use dark theme, defaults to false
-      },
-    },
-  };
+  // const providerOptions = {
+  //   metmask: {
+  //     package: true,
+  //   },
+  //   bitski: {
+  //     package: Bitski, // required
+  //     options: {
+  //       clientId: "BITSKI_CLIENT_ID", // required
+  //       callbackUrl: "BITSKI_CALLBACK_URL", // required
+  //     },
+  //   },
+  //   walletconnect: {
+  //     package: WalletConnectProvider, // required
+  //     options: {
+  //       infuraId: "INFURA_ID", // required
+  //     },
+  //   },
+  //   coinbasewallet: {
+  //     package: CoinbaseWalletSDK, // Required
+  //     options: {
+  //       appName: "web3modal", // Required
+  //       infuraId: "INFURA_ID", // Required
+  //       rpc: "", // Optional if `infuraId` is provided; otherwise it's required
+  //       chainId: 1, // Optional. It defaults to 1 if not provided
+  //       darkMode: false, // Optional. Use dark theme, defaults to false
+  //     },
+  //   },
+  // };
 
-  const web3Modal = new Web3Modal({
-    network: "rinkeby",
-    theme: "dark",
-    cacheProvider: true,
-    providerOptions,
-  });
+  // const web3Modal = new Web3Modal({
+  //   network: "rinkeby",
+  //   theme: "dark",
+  //   cacheProvider: true,
+  //   providerOptions,
+  // });
 
   const connectWallet = async () => {
-    const provider = await web3Modal.connect();
-    const web3 = new Web3(provider);
-    await window.ethereum.send("eth_requestAccounts");
-    const accounts = await web3.eth.getAccounts();
-    const account = accounts[0];
-    setWalletAddress(account);
+    console.log("Heyo")
+    // const provider = await web3Modal.connect();
+    // const web3 = new Web3(provider);
+    // await window.ethereum.send("eth_requestAccounts");
+    // const accounts = await web3.eth.getAccounts();
+    // const account = accounts[0];
+    // setWalletAddress(account);
   };
-  useEffect(() => {
-    if (walletAddress != "") {
-      connectWallet();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (walletAddress != "") {
+  //     connectWallet();
+  //   }
+  // }, []);
 
     const handleScrollTo = (data) => {
         props.passData(data.toLowerCase());
@@ -95,12 +96,13 @@ const Header = (props) => {
         </div>
         <div className="headerExternalLink">
           <button className="connectButton" onClick={connectWallet}>
-            {walletAddress
+            {/* {walletAddress
               ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(
                   walletAddress.length - 5,
                   walletAddress.length
                 )}`
-              : "Connect Wallet"}
+              : "Connect Wallet"} */}
+              Connect Wallet
           </button>
           <TelegramIcon className="externalLink" />
           <TwitterIcon className="externalLink" />
@@ -122,22 +124,6 @@ const Header = (props) => {
           <div className="poweredBy">
             <button className="mintYourNft">Mint your NFT </button>
           </div>
-        </div>
-      </div>
-      <div className="section">
-        <div className="headerBottom">
-          <p className="headerBottomContent">REWARDS</p>
-          <p className="headerBottomContent">AIRDROPS</p>
-          <p className="headerBottomContent">OWNERSHIP</p>
-          <LanguageIcon />
-          <p className="headerBottomContent">CREATE</p>
-          <p className="headerBottomContent">FROM</p>
-          <p className="headerBottomContent">IMAGINATIONS</p>
-          <LanguageIcon />
-          <p className="headerBottomContent">FIRST</p>
-          <p className="headerBottomContent">EVER</p>
-          <p className="headerBottomContent">GENERATED</p>
-          <p className="headerBottomContent">NFTS</p>
         </div>
       </div>
     </div>

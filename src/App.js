@@ -5,6 +5,7 @@ import Mint from "./components/Mint/Mint";
 import Engage from "./components/Engage/Engage";
 import Header from "./components/Header/Header";
 import HowAiverse from "./components/HowToAiverse/HowToAiverse";
+import ScrollSection from "./components/ScrollSection/ScrollSection";
 
 const App = () => {
   
@@ -35,6 +36,7 @@ const App = () => {
   return (
     <div className="App">
       <Header passData={passData} />
+      <ScrollSection />
       <HowAiverse />
       <Engage />
       <Nft />

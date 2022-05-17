@@ -80,7 +80,7 @@
 
 .elipse{
     position: absolute;
-    top: 420%;
+    top: 400%;
     right: 14%;
     width: 25%;
     height: 50%;
@@ -314,9 +314,30 @@
 }
 
 @media screen and (min-width: 642px) and (max-width: 960px) {
+    .mintParent {
+        height: auto;
+    }
     .mintDesign {
         /* top: 450%; */
         display: none;
+    }
+    .elipse {
+        top: 370%;
+    }
+    .bottomElipse {
+        top: 350%;
+    }
+    .mintFooterText {
+        font-size: medium;
+    }
+    .internalLink {
+        font-size: small;
+    }
+    .mintFooterInternalLink {
+        padding: 0 30px;
+    }
+    .mintTermsAndPolicy {
+        padding: 20px 0;
     }
 }
 
@@ -502,10 +523,22 @@
 }
 
 @media screen and (max-height: 641px) {
+    .mintParent {
+        height: auto;
+    }
     .mintFooterText {
         padding: 0 50px;
     }
     .internalLink {
         font-size: small;
+    }
+    .mintTermsAndPolicy {
+        padding: 15px 0;
+    }
+    .carding {
+        margin: 20px;
+    }
+    .Cardprop {
+        height: 250px;
     }
 }
