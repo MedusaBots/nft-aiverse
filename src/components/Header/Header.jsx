@@ -26,7 +26,7 @@ const Header = (props) => {
     bitski: {
       package: Bitski, // required
       options: {
-        clientId: "BITSKI_CLIENT_ID", // required
+        clientId: "BITSKI_CLIENT_ID", // required what is this?
         callbackUrl: "BITSKI_CALLBACK_URL", // required
       },
     },
