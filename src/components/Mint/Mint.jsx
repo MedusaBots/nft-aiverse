@@ -7,13 +7,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
-const Contract = require("./MyNFT.json");
+const Contract = require("./Aiverse.json");
 
 const Mint = ({ userAddress }) => {
   const web3 = createAlchemyWeb3(
     "https://eth-rinkeby.alchemyapi.io/v2/qFOiMhS5KfF1JnCgCdxexsSKluJi1rZy"
   );
-  const contractAddress = "0x1dd6d563ae2a42f186ed30d2135b2b743875561e";
+  const contractAddress = "0x6453520192572aA93931d25F3E66680F75B53ce4";
   const nftContract = new web3.eth.Contract(Contract.abi, contractAddress);
   const [phase, setPhase] = useState("");
   const [open, setOpen] = useState(false);
